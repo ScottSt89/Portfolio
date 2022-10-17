@@ -1,0 +1,138 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+.hero{
+    height:100vh;
+    width: 100%;
+    background-image: url(../images/background-image.jpg);
+    background-size: cover;
+    background-position: center;
+
+    /*image courtesy of https://wallpaperaccess.com/full/228514.jpg*/
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+.logo{
+    color: white;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+span{
+    color: gold;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+nav ul li a{
+    color: gold;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+nav ul li a:hover{
+    color: white;
+    transition: .4s;
+}
+.button{
+    background-color: gold;
+    color: #0748c2;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: transform .4s;
+}
+.button:hover{
+    color: white;
+    transform: scale(1.2);
+}
+.content{
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+}
+h1{
+    color: white;
+    margin: 20px 0px 20px;
+    font-size: 75px;
+}
+h3{
+    color: goldenrod;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+h4{
+    color: gold;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+.newsletter form{
+    width: 380px;
+    max-width: 100%;
+    position: relative;
+}
+.newsletter form input:first-child{
+    display: inline-block;
+    width: 100%;
+    padding: 14px 130px 14px 15px;
+    border: 2px solid gold;
+    outline: none;
+    border-radius: 30px;
+}
+.newsletter form input:last-child{
+    position: absolute;
+    display: inline-block;
+    outline: none;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+    background-color: gold;
+    color: #0748c2;
+    box-shadow: 0px 0px 5px black, 0px 0px 15px gold;
+    top: 6px;
+    right: 6px;
+}
+/* find out how to add icon for github, linkedIn, and any other media below */
+.footer{
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    position: absolute;
+}
+/* find out how to add icon for github+, linkedIn, and any other media below */
+div ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 10px;
+}
+
+/* find out how to add icon for github, linkedIn, and any other media below */
+.footer-images div ul li a{
+    border-radius: 30px;
+}
+.github-icon{
+  cursor: pointer;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+}
+.github-icon i:hover{
+    color: goldenrod;
+}
