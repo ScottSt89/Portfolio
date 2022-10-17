@@ -1,49 +1,9 @@
 *{
     padding: 0;
     margin: 0;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     box-sizing: border-box;
 }
-@media screen and (max-width: 768px) {
-    .hero{
-        flex-direction:column;
- }
-    nav{
-        flex-direction:column;
- }
-    .logo{
-        flex-direction:column;
- }
-    nav{
-    flex-direction:column;
- }
-    nav ul li{
-        flex-direction:column;
- }
-    nav ul li a{
-        flex-direction:column;
-    }
-    .button{
-        flex-direction:column;
-    }
-    .content{
-        flex-direction: column;
-    }
-    .github-icon{
-        flex-direction:column;
-    }
-    .github-icon i{
-        color: goldenrod;
-        flex-direction:column;
-    }
-    .newsletter{
-        flex-direction:column;
-    }
-
-}
-
-
-
 .hero{
     height:100vh;
     width: 100%;
@@ -51,7 +11,6 @@
     /*image courtesy of https://wallpaperaccess.com/full/228514.jpg*/
     background-size: cover;
     background-position: center;
-
 }
 nav{
     display: flex;
@@ -160,22 +119,75 @@ div ul li{
 }
 
 /* find out how to add icon for github, linkedIn, and any other media below */
-.footer-images div ul li a{
-    border-radius: 30px;
+.footer{
+    text-align: center;
+    text-decoration: none;
+    border: none;
 }
-.github-icon{
+.icons{
   cursor: pointer;
   border: none;
   padding: 15px 32px;
   text-align: center;
+  word-spacing: 15px;
   text-decoration: none;
   display: inline-block;
   font-size: 30px;
 }
-.github-icon i:hover{
+.icons a:hover{
     color: goldenrod;
 }
 /*add more social links below
 also add repositioning for mobile devices!*/
 
 
+/*fix media queries below when all other content is added if needed*/
+@media screen and (max-width: 768px) {
+    body{
+        width: 100%;
+        display: inline;
+    }
+    nav{
+        display:block;
+    }
+    nav h2{
+        display: inline-block;
+        margin: 2px;
+    }
+    nav ul{
+        display: inline-flex;
+        margin: 1%;
+    }
+    nav .button{
+        display: inline-block;
+        margin:-15px 25%;
+        padding: 3px;
+        align-items: center;
+    }
+    .content{
+        display:inline-block;
+    }
+    .newsletter{
+        display: inline-block;
+        margin:0px;
+    }
+    .newsletter form{
+        display: inline-flex;
+        margin: -15px;
+    }
+}
+ @media screen and (max-width: 576px){
+    nav{
+        display: inline;
+    }
+    .button{
+    display: inline-block;
+    margin: 5px 50px;
+    padding: 5px;
+    align-items: center;
+    }
+    .content h3{
+        display:inline-block;
+        font-size: 15px;
+    }
+}
