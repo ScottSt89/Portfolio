@@ -9,10 +9,10 @@
     height:100vh;
     width: 100%;
     background-image: url(../images/background-image.jpg);
-    /*image courtesy of https://wallpaperaccess.com/full/228514.jpg*/
     background-size: cover;
     background-position: center;
 
+    /*image courtesy of https://wallpaperaccess.com/full/228514.jpg*/
 }
 nav{
     display: flex;
