@@ -4,6 +4,45 @@
     font-family: 'Josefin Sans', sans-serif;
     box-sizing: border-box;
 }
+@media screen and (max-width: 768px) {
+    .hero{
+        flex-direction:column;
+ }
+    nav{
+        flex-direction:column;
+ }
+    .logo{
+        flex-direction:column;
+ }
+    nav{
+    flex-direction:column;
+ }
+    nav ul li{
+        flex-direction:column;
+ }
+    nav ul li a{
+        flex-direction:column;
+    }
+    .button{
+        flex-direction:column;
+    }
+    .content{
+        flex-direction: column;
+    }
+    .github-icon{
+        flex-direction:column;
+    }
+    .github-icon i{
+        color: goldenrod;
+        flex-direction:column;
+    }
+    .newsletter{
+        flex-direction:column;
+    }
+
+}
+
+
 
 .hero{
     height:100vh;
@@ -136,3 +175,7 @@ div ul li{
 .github-icon i:hover{
     color: goldenrod;
 }
+/*add more social links below
+also add repositioning for mobile devices!*/
+
+
