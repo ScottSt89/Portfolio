@@ -4,12 +4,16 @@
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     box-sizing: border-box;
 }
+header nav{
+    background-color: black;
+    padding-block: 25px;
+    width: 100%;
+}
 .hero{
     height:100vh;
     width: 100%;
-    background-image: url(../images/background-image.jpg);
-    /*image courtesy of https://wallpaperaccess.com/full/228514.jpg*/
-    background-size: cover;
+    background-image: url(../images/background-image2.jpg);
+    background-size:cover;
     background-position: center;
 }
 nav{
@@ -19,6 +23,7 @@ nav{
     padding-top: 45px;
     padding-left: 8%;
     padding-right: 8%;
+    font-size: 25px;
 }
 .logo{
     color: white;
@@ -27,7 +32,7 @@ nav{
     cursor: pointer;
 }
 span{
-    color: gold;
+    color: yellow;
 }
 nav ul li{
     list-style-type: none;
@@ -35,7 +40,8 @@ nav ul li{
     padding: 10px 25px;
 }
 nav ul li a{
-    color: gold;
+    color: yellow;
+    padding: 10px;
     text-decoration: none;
     font-weight: bold;
     text-transform: capitalize;
@@ -45,7 +51,7 @@ nav ul li a:hover{
     transition: .4s;
 }
 .button{
-    background-color: gold;
+    background-color: yellow;
     color: #0748c2;
     text-decoration: none;
     border: 2px solid transparent;
@@ -53,9 +59,10 @@ nav ul li a:hover{
     padding: 10px 25px;
     border-radius: 30px;
     transition: transform .4s;
+    font-size: 20px;
 }
 .button:hover{
-    color: white;
+    color: black;
     transform: scale(1.2);
 }
 .content{
@@ -64,18 +71,19 @@ nav ul li a:hover{
     left: 8%;
     transform: translateY(-50%);
 }
+
 h1{
     color: white;
     margin: 20px 0px 20px;
     font-size: 75px;
 }
 h3{
-    color: goldenrod;
+    color: yellow;
     font-size: 25px;
     margin-bottom: 50px;
 }
 h4{
-    color: gold;
+    color: yellow;
     letter-spacing: 2px;
     font-size: 20px;
 }
@@ -88,7 +96,7 @@ h4{
     display: inline-block;
     width: 100%;
     padding: 14px 130px 14px 15px;
-    border: 2px solid gold;
+    border: 2px solid yellow;
     outline: none;
     border-radius: 30px;
 }
@@ -99,7 +107,7 @@ h4{
     border: none;
     padding: 10px 30px;
     border-radius: 30px;
-    background-color: gold;
+    background-color: yellow;
     color: #0748c2;
     box-shadow: 0px 0px 5px black, 0px 0px 15px gold;
     top: 6px;
@@ -135,14 +143,69 @@ div ul li{
   font-size: 30px;
 }
 .icons a:hover{
-    color: goldenrod;
+    color: yellow;
 }
+.aboutme{
+    background-image: url(../images/background-image3.jpg);
+    width: 100%;
+    background: cover;
+}
+.aboutme img{
+    height: auto;
+    width:500px;
+}
+.metext{
+    width: 550px;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    margin: 20px;
+    box-sizing: border-box 0px 5px;
+    text-decoration: solid;
+    text-align:center;
+    padding: 20px 20px 20px;
+}
+.profession{
+    text-align: center;
+    margin: 20px;
+}
+.metext h2{
+    background-color: yellow;
+    border-radius:30px;
+}
+.main{
+    width: px;
+    max-width: 50%;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.quote{
+    background-color: black;
+    border-radius: 30px;
+    font-size: 22px;
+    text-transform: capitalize;
+    margin: 20px;
+    text-align: center;
+    color: yellow;
+}
+.desc{
+    font-size:25px;
+}
+
 /*add more social links below
 also add repositioning for mobile devices!*/
 
 
 /*fix media queries below when all other content is added if needed*/
 @media screen and (max-width: 768px) {
+    header nav{
+        width: 100%;
+        font-size: 20px;
+        display: inline-block;
+    }
+    
     body{
         width: 100%;
         display: inline;
@@ -154,9 +217,8 @@ also add repositioning for mobile devices!*/
         display: inline-block;
         margin: 2px;
     }
-    nav ul{
-        display: inline-flex;
-        margin: 1%;
+    nav ul li{
+        display: flexbox;
     }
     nav .button{
         display: inline-block;
@@ -177,17 +239,33 @@ also add repositioning for mobile devices!*/
     }
 }
  @media screen and (max-width: 576px){
-    nav{
-        display: inline;
+    header{
+        justify-content:space-between;
+    }
+    header nav ul li{
+        text-align:justify;
+        display:block;
+        font-size: 15px;
+    }
+    .logo{
+        font-size: 20px;
     }
     .button{
     display: inline-block;
     margin: 5px 50px;
     padding: 5px;
     align-items: center;
+    font-size: 15px;
+    }
+    .content h1{
+        font-size: 40px;
     }
     .content h3{
-        display:inline-block;
+        display:inline-flex;
         font-size: 15px;
+    }
+    .content h4{
+        justify-content: center;
+        margin-top: 75px;
     }
 }
