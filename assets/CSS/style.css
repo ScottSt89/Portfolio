@@ -11,13 +11,14 @@ header nav{
 }
 .hero{
     height:100vh;
-    width: 100%;
+    width:100%;
     background-image: url(../images/background-image2.jpg);
     background-size:cover;
     background-position: center;
 }
 nav{
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
     padding-top: 45px;
@@ -26,6 +27,8 @@ nav{
     font-size: 25px;
 }
 .logo{
+    display: flex;
+    flex-direction: row;
     color: white;
     font-size: 35px;
     letter-spacing: 1px;
@@ -51,6 +54,8 @@ nav ul li a:hover{
     transition: .4s;
 }
 .button{
+    display: flex;
+    flex-direction: row;
     background-color: yellow;
     color: #0748c2;
     text-decoration: none;
@@ -71,7 +76,15 @@ nav ul li a:hover{
     left: 8%;
     transform: translateY(-50%);
 }
+/* possible flexbox*
 
+ .content{
+    display: flex-start;
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+} */
 h1{
     color: white;
     margin: 20px 0px 20px;
@@ -87,11 +100,24 @@ h4{
     letter-spacing: 2px;
     font-size: 20px;
 }
+
+
 .newsletter form{
     width: 380px;
     max-width: 100%;
     position: relative;
 }
+
+/* possible flex box*  */
+
+/* .newsletter form{
+    display: flex;
+    flex-direction: row;
+    width: 380px;
+    max-width: 100%;
+    position: relative;
+} */
+
 .newsletter form input:first-child{
     display: inline-block;
     width: 100%;
@@ -145,6 +171,8 @@ div ul li{
 .icons a:hover{
     color: yellow;
 }
+
+/*style this with FLEXBOX for projects section*/
 .aboutme{
     background-image: url(../images/background-image3.jpg);
     width: 100%;
@@ -184,11 +212,12 @@ div ul li{
 .quote{
     background-color: black;
     border-radius: 30px;
-    font-size: 22px;
+    font-size: 20px;
     text-transform: capitalize;
-    margin: 20px;
+    margin: 10px;
     text-align: center;
     color: yellow;
+    padding: 12px;
 }
 .desc{
     font-size:25px;
@@ -198,8 +227,9 @@ div ul li{
 also add repositioning for mobile devices!*/
 
 
-/*fix media queries below when all other content is added if needed*/
-@media screen and (max-width: 768px) {
+ /* fix media queries below when all other content is added if needed ****TRY TO FIX WITH FLEXBOX**** */
+
+ @media screen and (max-width: 768px) {
     header nav{
         width: 100%;
         font-size: 20px;
@@ -240,7 +270,9 @@ also add repositioning for mobile devices!*/
 }
  @media screen and (max-width: 576px){
     header{
-        justify-content:space-between;
+        display: flex;
+        flex-direction: row;
+        /* justify-content:space-between; */
     }
     header nav ul li{
         text-align:justify;
@@ -258,6 +290,11 @@ also add repositioning for mobile devices!*/
     font-size: 15px;
     }
     .content h1{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        flex: auto;
+
         font-size: 40px;
     }
     .content h3{
@@ -265,7 +302,11 @@ also add repositioning for mobile devices!*/
         font-size: 15px;
     }
     .content h4{
-        justify-content: center;
-        margin-top: 75px;
+        display: flex;
+        flex-direction: row;
+        justify-items: center;
+        /* justify-content: center; */
+        /*margin-top: 75px; */
+        /* double check this */
     }
-}
+} 
