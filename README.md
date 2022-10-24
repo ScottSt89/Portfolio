@@ -15,4 +15,6 @@ This is the first project starting from scratch I have completed.
 - Author: Scott StJohn
 - Newsletter and Hero layout idea credit: Tahmid Ahmed; https://youtu.be/lgeoAUvoRJU
 
+## Deployed website URL: https://scottst89.github.io/Portfolio/
+
 ## Thank you for taking a look at my portfolio!
