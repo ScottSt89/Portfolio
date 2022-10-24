@@ -13,7 +13,6 @@ This is the first project starting from scratch I have completed.
 ## Credits
 
 - Author: Scott StJohn
-- Image Credit in "Projects" Section: https://wallpapercave.com/w/wp4676588
 - Newsletter and Hero layout idea credit: Tahmid Ahmed; https://youtu.be/lgeoAUvoRJU
 
 ## Thank you for taking a look at my portfolio!
