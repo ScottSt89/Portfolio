@@ -8,7 +8,7 @@ I learned so much working on this. It was a very fun project to create something
 
 This is the first project starting from scratch I have completed.
 
-!["My Finished Portfolio"](assets/images/MyPortfolio.png)
+![](assets/images/MyPortfolio.png)
 
 ## Credits
 
