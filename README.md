@@ -8,13 +8,13 @@ I learned so much working on this. It was a very fun project to create something
 
 This is the first project starting from scratch I have completed.
 
+## Deployed website URL: https://scottst89.github.io/Portfolio/
+
 ![](assets/images/Porfolio.jpg)
 
 ## Credits
 
 - Author: Scott StJohn
 - Newsletter and Hero layout idea credit: Tahmid Ahmed; https://youtu.be/lgeoAUvoRJU
-
-## Deployed website URL: https://scottst89.github.io/Portfolio/
 
 ## Thank you for taking a look at my portfolio!
